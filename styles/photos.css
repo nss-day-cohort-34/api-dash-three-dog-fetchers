@@ -1,0 +1,17 @@
+body {
+    background-color: antiquewhite;
+}
+
+#photos_data {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+.photo_item {
+border: 1px dotted black;
+flex-basis: 16%;
+padding:10px;
+margin: 10px;
+
+}
