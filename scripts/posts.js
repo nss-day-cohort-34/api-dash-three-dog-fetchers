@@ -3,10 +3,10 @@ const whereToPutThePosts = document.querySelector("#posts_container")
 const postFetcher = () => {
     // Fetch the data
     fetch("https://jsonplaceholder.typicode.com/posts")
-        // Parse the data
+        // Parse the data -- YOU CAN ACTUALLY AVOID THE FOR LOOP BY ADDING "limit=20" to the URL
         .then(data => data.json())
         // Do something with the parsed data
-        .then((arrayOfPosts) => {
+        .then((arrayOfPosts) => {   
             for (let i =0; i < 20; i++) {
                 const singlePost = arrayOfPosts[i]; 
                 const convertedPost = postConverter(singlePost)
